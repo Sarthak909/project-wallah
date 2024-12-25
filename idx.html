@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Wallah</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Font Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        /* Card Layout for Domains */
+        .domain-cards {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 30%;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Specialist List Styling */
+        .specialists {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        .specialists h4 {
+            margin-bottom: 1rem;
+        }
+
+        .specialists ul {
+            list-style: none;
+        }
+
+        .specialists ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .specialists ul li img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        /* Hover effect for choosing a specialist */
+        .specialists ul li:hover {
+            background-color: #ddd;
+            padding: 5px;
+        }
+
+        .specialists ul li span {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        /* Sections Styling */
+        section {
+            padding: 2rem;
+            background-color: #fff;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Image Styling */
+        .specialist-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Project Wallah</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#domains">Domains</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <div class="welcome">
+            <h1>Welcome to Project Wallah</h1>
+            <p>Choose from a variety of domains to find the right project for you!</p>
+        </div>
+    </section>
+
+    <!-- Domains Section -->
+    <section id="domains">
+        <h2>Choose Your Project Domain</h2>
+        <div class="domain-cards">
+            <div class="card">
+                <h3>Online Submission-Based Projects</h3>
+                <p>Work on digital projects with online submission options.</p>
+
+                <!-- People and Amounts for Online Projects -->
+                <div class="specialists">
+                    <h4>Choose a Specialist:</h4>
+                    <ul>
+                        <li><img src="https://via.placeholder.com/40" alt="Sarthak" class="specialist-img"> Sarthak <span>₹300</span></li>
+                        <li><img src="https://via.placeholder.com/40" alt="Sanidhya" class="specialist-img"> Sanidhya <span>₹250</span></li>
+                        <li><img src="https://via.placeholder.com/40" alt="Subrat" class="specialist-img"> Subrat <span>₹450</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Offline Written Type Projects</h3>
+                <p>Work on handwritten or typed projects to submit offline.</p>
+
+                <!-- People and Amounts for Offline Projects -->
+                <div class="specialists">
+                    <h4>Choose a Specialist:</h4>
+                    <ul>
+                        <li><img src="https://via.placeholder.com/40" alt="Samridh" class="specialist-img"> Samridh <span>₹350</span></li>
+                        <li><img src="https://via.placeholder.com/40" alt="Sumeet" class="specialist-img"> Sumeet <span>₹400</span></li>
+                        <li><img src="https://via.placeholder.com/40" alt="Satyam" class="specialist-img"> Satyam <span>₹275</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Web Design-Based Projects</h3>
+                <p>Create or redesign websites for different platforms.</p>
+
+                <!-- People and Amounts for Web Design Projects -->
+                <div class="specialists">
+                    <h4>Choose a Specialist:</h4>
+                    <ul>
+                        <li><img src="https://via.placeholder.com/40" alt="Sanyam" class="specialist-img"> Sanyam <span>₹450</span></li>
+                        <li><img src="https://via.placeholder.com/40" alt="Shashwat" class="specialist-img"> Shashwat <span>₹300</span></li>
+                        <li><img src="https://via.placeholder.com/40" alt="Shubh" class="specialist-img"> Shubh <span>₹500</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Submission Page -->
+    <section id="online">
+        <h2>Online Submission-Based Projects</h2>
+        <p>These projects require you to work online and submit digitally.</p>
+    </section>
+
+    <!-- Offline Written Page -->
+    <section id="offline">
+        <h2>Offline Written Type Projects</h2>
+        <p>Work on written projects that require offline submission.</p>
+    </section>
+
+    <!-- Web Design Page -->
+    <section id="webdesign">
+        <h2>Web Design-Based Projects</h2>
+        <p>Design and build websites with various CMS options.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>How do I submit my project online?</h3>
+            <p>Log in and choose your project. Once completed, submit through our secure portal.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I make changes after submission?</h3>
+            <p>You can request changes before the project deadline, depending on the project type.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What tools do I need for web design projects?</h3>
+            <p>You can use HTML/CSS, WordPress, Shopify, or any design tool you prefer.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Project Wallah. All rights reserved.</p>
+    </footer>
+</body>
+</html>
